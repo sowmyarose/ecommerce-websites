@@ -91,7 +91,7 @@ export default function ContactPage() {
           <p className="text-gray-600 mb-6">
             Order custom cakes online with ease! Choose your favorite flavors,
             designs, and pickup or delivery options. Fill out the form below,
-            and we'll get back to you with confirmation.
+            and we&apos;ll get back to you with confirmation.
           </p>
         </div>
 

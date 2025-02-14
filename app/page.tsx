@@ -1,10 +1,13 @@
 import Link from "next/link";
 
-const pages = [{ name: "Bakery", path: "/bakery" }];
+const pages = [
+  { name: "Bakery", path: "/bakery" },
+  { name: "Clothing", path: "/clothing" },
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-center gap-2">
       {pages.map((page) => (
         <Link
           key={page.name}

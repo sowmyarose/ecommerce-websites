@@ -1,4 +1,4 @@
-import { Cookie, Great_Vibes, Lusitana } from "next/font/google";
+import { Anton, Cookie, Great_Vibes, Lusitana } from "next/font/google";
 
 export const lusitana = Lusitana({
   subsets: ["latin"],
@@ -11,6 +11,11 @@ export const cookie = Cookie({
 });
 
 export const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+export const anton = Anton({
   subsets: ["latin"],
   weight: ["400"],
 });
