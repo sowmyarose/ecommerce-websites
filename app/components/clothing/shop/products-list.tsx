@@ -8,7 +8,7 @@ export default function ProductsList({ products, type = undefined }: any) {
 
   return (
     <div
-      className={`mt-16 w-full px-2 lg:max-w-4xl xl:px-0 xl:max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 ${
+      className={`py-12 w-full px-2 lg:max-w-4xl xl:px-0 xl:max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 ${
         type ? "xl:grid-cols-4" : "xl:grid-cols-3"
       } gap-4 lg:gap-8 rounded-md`}
     >

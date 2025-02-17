@@ -30,7 +30,7 @@ export default function Shop() {
     : products.slice(0, productsPerRow * 2);
 
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 
@@ -73,7 +73,7 @@ export default function Shop() {
       </section>
 
       {/* Products */}
-      <section className="w-full py-12">
+      <section className="w-full py-12 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col">
           <h2 className="text-2xl text-center font-bold">Our Products</h2>
 

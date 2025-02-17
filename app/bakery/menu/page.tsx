@@ -6,7 +6,7 @@ import Contact from "@/app/components/bakery/contact";
 
 export default function MenuPage() {
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 

@@ -42,8 +42,8 @@ export default function Photography() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-12 text-center">
-        <h2 className="text-2xl lg:text-3xl font-bold">
+      <section className="py-12 text-center bg-white">
+        <h2 className="text-2xl lg:text-3xl font-bold text-black">
           Ready to Elevate Your Space or Capture Special Moments?
         </h2>
         <div className="mt-6 flex flex-col md:flex-row justify-center gap-4 px-4">

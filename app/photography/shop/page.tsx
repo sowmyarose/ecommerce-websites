@@ -11,7 +11,9 @@ export default function Shop() {
   const router = useRouter();
 
   return (
-    <div className={`w-full h-screen flex flex-col ${lusitana.className}`}>
+    <div
+      className={`w-full h-screen flex flex-col ${lusitana.className} bg-white`}
+    >
       {/* Header */}
       <Header />
 

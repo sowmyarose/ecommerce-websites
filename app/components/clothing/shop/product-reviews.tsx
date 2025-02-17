@@ -31,7 +31,7 @@ const reviews = [
 
 export default function ProductReviews() {
   return (
-    <div className="mt-12 flex flex-col">
+    <div className="mt-12 flex flex-col bg-white">
       <h2 className="text-black text-4xl">Customer reviews</h2>
 
       {reviews.map((review) => (

@@ -23,7 +23,7 @@ export default function PhotoDetail() {
 
       {/* Photo Details */}
       {photo && (
-        <div className="py-12 w-full flex flex-col lg:flex-row px-4 md:px-12 gap-8">
+        <div className="py-12 w-full flex flex-col lg:flex-row px-4 md:px-12 gap-8 bg-white text-black">
           {/* Image */}
           <div className="w-full lg:w-1/2 h-[300px] md:h-[500px] relative flex">
             <Image

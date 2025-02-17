@@ -9,7 +9,7 @@ import Contact from "../components/bakery/contact";
 
 export default function Bakery() {
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 

@@ -15,7 +15,7 @@ export default function Type() {
   const dresses = products.filter((item) => item.type === type);
 
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 

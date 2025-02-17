@@ -5,7 +5,7 @@ import { cookie } from "@/app/fonts/fonts";
 
 export default function HeroSection() {
   return (
-    <section className="w-full mt-24 xl:mt-12">
+    <section className="w-full mt-24 xl:mt-12 bg-white">
       <div className="bg-[#ad64ed] min-h-44 md:min-h-72 lg:min-h-[300px] flex items-center justify-center">
         <h1
           className={`text-5xl md:text-7xl lg:text-9xl font-bold text-white ${cookie.className}`}
@@ -77,12 +77,12 @@ export default function HeroSection() {
             </motion.div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 bg-white">
           <div className="max-w-4xl mx-auto xl:py-12 px-6">
             <h5 className="text-start text-[#ad64ed] font-semibold text-lg">
               About Us
             </h5>
-            <h1 className="mb-4 text-xl md:text-4xl lg:text-3xl xl:text-4xl font-bold">
+            <h1 className="mb-4 text-xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-black">
               Welcome to Bakery Shop
             </h1>
             <p className="mb-4 text-gray-600">

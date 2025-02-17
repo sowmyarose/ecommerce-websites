@@ -92,7 +92,7 @@ export default function Clothing() {
           <ProductsList products={products.slice(5, 9)} type="all" />
           <Link
             href="/clothing/shop"
-            className="mt-6 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243E] text-white px-6 py-2 rounded-lg hover:bg-gray-700"
+            className="mt-6 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243E] text-white px-6 py-3 rounded-lg hover:bg-gray-700"
           >
             Shop Now
           </Link>

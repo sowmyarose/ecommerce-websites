@@ -38,9 +38,11 @@ export default function Menu() {
   const [activeTab, setActiveTab] = useState("tab-1");
 
   return (
-    <section className="w-full mt-8 mb-8">
+    <section className="w-full py-12">
       <div className="flex flex-col w-full lg:max-w-[900px] xl:max-w-[1200px] mx-auto mt-10 items-center justify-center">
-        <h2 className={`text-3xl font-semibold ${lusitana.className}`}>
+        <h2
+          className={`text-3xl font-semibold ${lusitana.className} text-black`}
+        >
           Most Popular Items
         </h2>
 
@@ -51,7 +53,7 @@ export default function Menu() {
               <button
                 className={`flex items-center text-start mx-3 pb-3 ${
                   activeTab === tab.id
-                    ? "border-b-2 border-b-[#ad64ed] text-primary"
+                    ? "border-b-2 border-b-[#ad64ed] text-black"
                     : "text-gray-500"
                 }`}
                 onClick={() => setActiveTab(tab.id)}
@@ -74,7 +76,7 @@ export default function Menu() {
         </ul>
 
         {/* List */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 px-2">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 px-2 bg-white">
           {cakes.map((cake, index) => (
             <motion.div
               key={index}

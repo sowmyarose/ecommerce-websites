@@ -17,7 +17,7 @@ export default function Product() {
   );
 
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 
@@ -33,7 +33,7 @@ export default function Product() {
       </div>
 
       {/* Product */}
-      <section className="w-full mt-24">
+      <section className="w-full mt-24 bg-white">
         <ProductDetail product={product} />
       </section>
 

@@ -6,7 +6,9 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <div className={`w-full h-screen flex flex-col ${lusitana.className}`}>
+    <div
+      className={`w-full h-screen flex flex-col ${lusitana.className} bg-white`}
+    >
       {/* Header */}
       <Header />
 

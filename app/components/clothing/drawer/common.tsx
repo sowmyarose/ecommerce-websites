@@ -63,7 +63,7 @@ const OrderComplete = ({ billingState }: any) => {
   return (
     <div className="w-full flex items-center justify-center mt-6">
       <div className="flex flex-col w-[500px] bg-white shadow-md rounded-md">
-        <h3 className="border-b border-b-gray-200 p-6 text-xl text-black font-semibold">
+        <h3 className="border-b border-b-gray-200 p-6 text-lg md:text-xl text-black font-semibold">
           Thank you for ordering!
         </h3>
 
@@ -127,7 +127,7 @@ const BilledDetail = ({ billingState }: any) => {
         Billing Address
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between p-6">
+      <div className="flex flex-col lg:flex-row justify-between p-6">
         {/* Name */}
         <div className="text-lg flex flex-row items-center gap-4">
           <Image
@@ -143,7 +143,7 @@ const BilledDetail = ({ billingState }: any) => {
         </div>
 
         {/* Address */}
-        <div className="text-zinc-600 text-sm">
+        <div className="text-zinc-600 text-sm ml-10 mt-4 ">
           <p>
             {billingState.house} - {billingState.street}
           </p>

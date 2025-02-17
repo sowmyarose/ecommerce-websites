@@ -48,7 +48,7 @@ export default function CheckoutDrawer({
       const valid = Object.values(billingState).every((item) => item !== "");
       setEnablePayment(valid ? "openPayment" : "error");
       setLoading({ ...loading, billing: false });
-    }, 5000);
+    }, 3000);
   };
 
   const handlePayment = () => {

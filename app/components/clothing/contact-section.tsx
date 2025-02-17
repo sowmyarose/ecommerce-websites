@@ -1,9 +1,9 @@
 export default function ContactSection() {
   return (
     <section className="w-full bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243E] py-12">
-      <div className="w-full md:max-w-xl lg:max-w-3xl xl:max-w-7xl mx-auto flex flex-col md:flex-row justify-around items-center md:items-start px-4 text-white gap-4">
+      <div className="w-full md:max-w-xl lg:max-w-3xl xl:max-w-7xl mx-auto flex flex-col lg:flex-row justify-around items-center lg:items-start px-4 text-white gap-4">
         <div>
-          <h2 className="text-2xl md:text-4xl text-center">
+          <h2 className="text-2xl lg:text-4xl text-center">
             The Loom Fashions
           </h2>
           <div className="flex justify-center mt-4 space-x-4">

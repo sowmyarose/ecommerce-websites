@@ -9,7 +9,9 @@ import Contact from "@/app/components/photography/contact";
 
 export default function Booking() {
   return (
-    <div className={`w-full h-screen flex flex-col ${lusitana.className}`}>
+    <div
+      className={`w-full h-screen flex flex-col ${lusitana.className} bg-white`}
+    >
       {/* Header */}
       <Header />
 

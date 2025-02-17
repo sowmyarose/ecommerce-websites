@@ -83,7 +83,7 @@ export default function Header() {
             >
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 text-2xl font-bold"
+                className="absolute top-4 right-4 text-2xl font-bold text-black"
               >
                 ×
               </button>

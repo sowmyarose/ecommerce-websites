@@ -69,7 +69,7 @@ const ContactForm = () => {
 
 export default function ContactPage() {
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 
@@ -83,7 +83,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form */}
-      <div className="max-w-screen-xl mx-auto p-6 flex flex-col lg:flex-row gap-10 items-start mt-10">
+      <div className="max-w-screen-xl mx-auto p-6 flex flex-col lg:flex-row gap-10 items-start mt-10 text-black bg-white">
         <div className="w-full lg:w-1/2">
           <h2 className="text-xl lg:text-xl xl:text-3xl font-bold text-center mb-6">
             Order Your Cake Online

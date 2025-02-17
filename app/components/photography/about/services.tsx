@@ -33,7 +33,7 @@ export default function Services() {
             className={`${service.img} bg-no-repeat bg-center rounded-lg`}
           >
             <div className="rounded-lg shadow-lg h-[300px] xl:h-[400px] flex flex-col items-center justify-end">
-              <div className="backdrop-blur-sm bg-white/30">
+              <div className="backdrop-blur-sm bg-white/30 rounded-b-lg">
                 <h3 className="text-xl font-semibold text-gray-800">
                   {service.title}
                 </h3>

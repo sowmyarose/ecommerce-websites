@@ -9,7 +9,7 @@ const bestSellers = [
 
 export default function BestSellers() {
   return (
-    <section className="w-full mt-12 px-4">
+    <section className="w-full py-12 px-4 bg-white">
       <div className="rounded-[50px] bg-[#5F2966] flex flex-col p-8 min-h-[750px]">
         <h2
           className={`text-5xl font-semibold text-gray-700 text-center text-white ${cookie.className}`}

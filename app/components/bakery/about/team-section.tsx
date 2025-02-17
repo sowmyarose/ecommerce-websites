@@ -31,7 +31,7 @@ export default function Team() {
   const [isHovered, setIsHovered] = useState<any>({});
 
   return (
-    <section className="w-full mt-16">
+    <section className="w-full py-12 g-white">
       <h2 className="text-3xl font-semibold text-[#ad64ed] text-center">
         Meet Our Team
       </h2>
@@ -66,7 +66,9 @@ export default function Team() {
                     className="object-cover"
                   />
                 </div>
-                <h5 className="text-lg font-semibold">{member.name}</h5>
+                <h5 className="text-lg text-black font-semibold">
+                  {member.name}
+                </h5>
                 <small className="text-gray-500">{member.role}</small>
                 {isHovered[member.name] && (
                   <motion.div

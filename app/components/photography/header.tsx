@@ -139,11 +139,11 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: "-100%", opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="w-full bg-white shadow-lg fixed top-24 left-0"
+              className="w-full bg-white text-black shadow-lg fixed top-24 left-0"
             >
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 text-2xl"
+                className="absolute top-4 right-4 text-2xl font-bold"
               >
                 ×
               </button>

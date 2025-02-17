@@ -51,7 +51,7 @@ export default function Contact() {
 
       {/* Contact details */}
       <div className="w-full flex flex-col md:flex-row gap-4">
-        <div className="w-full md:w-1/2 flex flex-col gap-4 lg:items-center">
+        <div className="w-full md:w-1/2 flex flex-col gap-4 items-center">
           <p className="text-gray-700 md:text-xl text-white">
             123 Sweet Street, Bakery Town
           </p>
@@ -61,7 +61,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col gap-4 lg:items-center">
+        <div className="w-full md:w-1/2 flex flex-col gap-4 items-center">
           <p className="text-gray-700 md:text-xl text-white">
             Mon - Fri 8:00 AM - 6:00 PM
           </p>
