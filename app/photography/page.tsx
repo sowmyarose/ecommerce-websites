@@ -9,7 +9,7 @@ import Contact from "../components/photography/contact";
 
 export default function Photography() {
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 

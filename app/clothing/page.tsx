@@ -28,7 +28,7 @@ const blogs = [
 
 export default function Clothing() {
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col bg-white">
       {/* Header */}
       <Header />
 
@@ -48,19 +48,22 @@ export default function Clothing() {
 
       {/* About */}
       <section className="py-12 bg-gray-100">
-        <div className="max-w-screen-lg mx-auto px-6 flex flex-row">
-          <div className="w-1/2 flex flex-col gap-4">
-            <h2 className="text-3xl font-bold text-gray-800">About Us</h2>
+        <h2 className="text-3xl font-bold text-gray-800 text-center mb-5">
+          About Us
+        </h2>
+        <div className="w-full xl:max-w-screen-xl mx-auto px-6 flex flex-col lg:flex-row gap-6">
+          <div className="w-full lg:w-1/2">
             <Image
               src="/clothing/about.png"
-              alt="you"
+              alt="Clothing Store"
               width={400}
               height={300}
+              className="w-full h-auto"
             />
           </div>
 
-          <div className="w-1/2 flex flex-col justify-center gap-8">
-            <p className="mt-4 text-gray-600">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center gap-6">
+            <p className="text-gray-600">
               Welcome to our clothing store! We are dedicated to providing
               stylish and high-quality apparel that suits your unique fashion
               sense. Our mission is to make fashion accessible and enjoyable for
@@ -68,7 +71,7 @@ export default function Clothing() {
             </p>
             <Link
               href="/clothing/about"
-              className="p-3 text-center rounded-md bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243E] text-white mt-8"
+              className="p-3 text-center rounded-md bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243E] text-white"
             >
               Read More
             </Link>
@@ -79,7 +82,7 @@ export default function Clothing() {
       {/* Exclusive offers */}
       <section className="w-full bg-[#e3f2fd] py-12 px-6 text-center">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800">
+          <h2 className="text-xl md:text-3xl font-bold text-gray-800">
             Exclusive Offers & Discounts
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -87,9 +90,12 @@ export default function Clothing() {
             selected items.
           </p>
           <ProductsList products={products.slice(5, 9)} type="all" />
-          <button className="mt-6 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243E] text-white px-6 py-2 rounded-lg hover:bg-gray-700">
+          <Link
+            href="/clothing/shop"
+            className="mt-6 bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243E] text-white px-6 py-2 rounded-lg hover:bg-gray-700"
+          >
             Shop Now
-          </button>
+          </Link>
         </div>
       </section>
 

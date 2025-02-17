@@ -65,7 +65,7 @@ export default function CheckoutDrawer({
       animate={{ x: openCheckout ? "0%" : "100%" }}
       exit={{ x: openCheckout ? "100%" : "0%" }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="fixed top-0 right-0 w-full h-full bg-white shadow-lg z-50 flex flex-col"
+      className="fixed top-0 right-0 w-full h-full bg-white shadow-lg z-50 flex flex-col text-black"
     >
       <div className="bg-gray-100 p-6">
         <h2 className="text-xl font-semibold mb-4">Checkout</h2>

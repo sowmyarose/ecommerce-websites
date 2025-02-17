@@ -8,7 +8,7 @@ export default function Blog() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold">
+            <h3 className="text-lg font-semibold text-black">
               5 Tips for the Perfect Birthday Cake
             </h3>
             <p className="text-gray-600 mt-2">
@@ -20,7 +20,7 @@ export default function Blog() {
             </button>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold">
+            <h3 className="text-lg font-semibold text-black">
               How to Choose the Right Cake for Your Event
             </h3>
             <p className="text-gray-600 mt-2">

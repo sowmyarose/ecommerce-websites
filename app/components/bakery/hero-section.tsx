@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cookie } from "../../fonts/fonts";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -15,9 +16,12 @@ export default function HeroSection() {
           <p className="text-gray-600 mt-4 text-center">
             Freshly baked with love and premium ingredients
           </p>
-          <button className="mt-6 bg-[#c693f2] text-white px-6 py-2 rounded-lg">
+          <Link
+            href="/bakery/contact"
+            className="mt-6 bg-[#c693f2] text-white px-6 py-2 rounded-lg"
+          >
             Order Now
-          </button>
+          </Link>
         </div>
 
         {/* Picture */}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="w-full mt-4 px-4">
+    <section className="w-full mt-4 px-4 bg-white">
       <div className="flex flex-col-reverse lg:flex-row p-4 md:p-8 md:min-h-[650px]">
         {/* Design */}
         <div className="w-full lg:w-1/2 relative flex items-center justify-center">

@@ -32,7 +32,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-              className="text-start"
+              className="text-end"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -57,7 +57,7 @@ export default function HeroSection() {
                 width={375}
                 height={500}
                 alt="About 3"
-                className="rounded w-3/4"
+                className="rounded w-3/4 ml-[25%]"
               />
             </motion.div>
 

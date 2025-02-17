@@ -127,7 +127,7 @@ const BilledDetail = ({ billingState }: any) => {
         Billing Address
       </div>
 
-      <div className="flex flex-row justify-between p-6">
+      <div className="flex flex-col md:flex-row justify-between p-6">
         {/* Name */}
         <div className="text-lg flex flex-row items-center gap-4">
           <Image

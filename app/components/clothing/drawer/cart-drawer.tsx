@@ -40,7 +40,7 @@ const QuantitySelector = () => {
       <motion.button
         whileTap={{ scale: 0.9 }}
         onClick={handleIncrement}
-        className="p-2 bg-gray-200 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center"
+        className="p-2 bg-gray-200 hover:bg-blue-600 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center"
       >
         +
       </motion.button>
@@ -68,12 +68,12 @@ export default function CartDrawer({
           animate={{ x: openCart ? "0%" : "100%" }}
           exit={{ x: "100%" }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="fixed top-0 right-0 w-[300px] md:w-[400px] lg:w-[600px] h-full bg-white shadow-lg z-50 flex flex-col"
+          className="fixed top-0 right-0 w-[300px] md:w-[400px] lg:w-[600px] h-full bg-white shadow-lg z-50 flex flex-col text-black"
         >
           {/* Close Button */}
           <button
             onClick={() => setOpenCart(false)}
-            className="absolute top-4 right-4 text-gray-600 hover:text-black"
+            className="absolute top-4 right-4 text-gray-600 hover:text-black font-bold"
           >
             x
           </button>

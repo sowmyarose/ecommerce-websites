@@ -35,7 +35,7 @@ export default function Shop() {
       <Header />
 
       {/* Discount */}
-      <div className="w-full bg-gray-100 text-center text-lg font-bold text-black p-2 mt-20 md:mt-24">
+      <div className="w-full bg-gray-100 text-center md:text-lg font-bold text-black p-2 mt-20 md:mt-24">
         *** Upto 50% off on purchases above 2000 ***
       </div>
 
@@ -49,7 +49,7 @@ export default function Shop() {
 
       {/* Types */}
       <section className="w-full py-12">
-        <div className="w-full md:max-w-2xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-3">
+        <div className="w-full md:max-w-2xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-3">
           {types.map((type, index) => (
             <Link
               key={index}

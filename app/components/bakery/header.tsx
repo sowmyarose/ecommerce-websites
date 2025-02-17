@@ -21,7 +21,9 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50">
       {/* Large */}
       <div className="hidden md:flex flex-row justify-between items-center w-full h-full text-black px-6 bg-white min-h-24">
-        <Image src="/bakery-logo.png" alt="logo" width={100} height={50} />
+        <Link href="/bakery">
+          <Image src="/bakery-logo.png" alt="logo" width={100} height={50} />
+        </Link>
 
         {/* Menu */}
         <div className="flex flex-row items-center gap-8">
@@ -33,7 +35,7 @@ export default function Header() {
                 href={item.href}
                 className={`${
                   greatVibes.className
-                } text-lg lg:text-2xl font-bold hover:border-b-2 hover:border-[#c693f2] ${
+                } text-lg text-black lg:text-2xl font-bold hover:border-b-2 hover:border-[#c693f2] ${
                   isActive ? "border-b-2 border-[#c693f2]" : ""
                 }`}
               >
@@ -47,7 +49,9 @@ export default function Header() {
       {/* Small */}
       <div className="flex md:hidden flex-row justify-between items-center w-full h-full px-4 bg-white min-h-20">
         {/* Menu */}
-        <Image src="/bakery-logo.png" alt="logo" width={100} height={50} />
+        <Link href="/bakery">
+          <Image src="/bakery-logo.png" alt="logo" width={100} height={50} />
+        </Link>
 
         <button onClick={() => setIsOpen(true)}>
           <Image
@@ -70,7 +74,7 @@ export default function Header() {
             >
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 text-2xl"
+                className="absolute top-4 right-4 text-2xl text-black font-bold"
               >
                 ×
               </button>
@@ -80,7 +84,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={item.href}
-                      className={`${greatVibes.className} text-2xl font-bold hover:border-b-2 hover:border-[#c693f2]`}
+                      className={`${greatVibes.className} text-2xl text-black font-bold hover:border-b-2 hover:border-[#c693f2]`}
                     >
                       {item.title}
                     </Link>

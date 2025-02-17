@@ -83,7 +83,7 @@ export default function Header() {
             >
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 text-2xl"
+                className="absolute top-4 right-4 text-2xl font-bold"
               >
                 ×
               </button>
@@ -93,7 +93,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={item.href}
-                      className={`${anton.className} text-lg font-bold hover:border-b-2 hover:border-[#c693f2]`}
+                      className={`${anton.className} text-black text-lg font-bold hover:border-b-2 hover:border-[#c693f2]`}
                     >
                       {item.title}
                     </Link>

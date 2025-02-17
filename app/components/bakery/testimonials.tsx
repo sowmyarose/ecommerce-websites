@@ -25,8 +25,8 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="w-full mt-4 px-4">
-      <div className="rounded-[50px] bg-white flex flex-col p-8">
+    <section className="w-full mt-4 px-4 mb-4">
+      <div className="bg-white flex flex-col p-8">
         <h2 className="text-3xl font-bold text-[#b574ef] text-center">
           What Our Customers Say
         </h2>

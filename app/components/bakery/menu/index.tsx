@@ -45,7 +45,7 @@ export default function Menu() {
         </h2>
 
         {/* Types */}
-        <ul className="flex flex-col md:flex-row justify-center border-b mb-5 mt-5 gap-4">
+        <ul className="flex flex-col md:flex-row justify-center md:border-b mb-5 mt-5 gap-4">
           {tabs.map((tab) => (
             <li key={tab.id} className="nav-item">
               <button
@@ -74,19 +74,19 @@ export default function Menu() {
         </ul>
 
         {/* List */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 px-2">
           {cakes.map((cake, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-white overflow-hidden p-4 flex "
+              className="bg-white overflow-hidden p-4 flex text-black"
             >
               <Image
                 className="flex-shrink-0 rounded"
                 src={cake.img}
-                alt="Chicken Burger"
+                alt={cake.name}
                 width={80}
                 height={80}
               />
