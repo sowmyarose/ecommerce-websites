@@ -3,6 +3,7 @@ import Link from "next/link";
 const pages = [
   { name: "Bakery", path: "/bakery" },
   { name: "Clothing", path: "/clothing" },
+  { name: "Photography", path: "/photography" },
 ];
 
 export default function Home() {
