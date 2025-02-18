@@ -35,9 +35,9 @@ export default function BookingForm() {
   };
 
   return (
-    <section className="w-full py-12">
+    <section className="w-full bg-white">
       {submitted ? (
-        <div className="text-center w-full h-full">
+        <div className="text-center w-full h-full bg-white">
           <h3 className="text-xl font-semibold text-green-600">
             🎉 Booking Successful!
           </h3>
@@ -50,15 +50,18 @@ export default function BookingForm() {
           </Link>
         </div>
       ) : (
-        <div className="bg-white shadow-lg rounded-lg md:max-w-xl mx-auto w-full px-4">
-          <h2 className="text-lg md:text-3xl font-bold text-gray-800 mb-6 text-center border-b border-b-gray-200 p-3">
+        <div className="bg-white w-full">
+          <h2 className="text-xl md:text-3xl font-bold text-gray-800 text-center border-b border-b-gray-200 py-5">
             Book a Photography Session
           </h2>
-          <form onSubmit={handleSubmit} className="space-y-4 px-6 py-6">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-4 px-6 py-6 rounded-md shadow-lg bg-gray-100 md:max-w-2xl mx-auto my-10"
+          >
             {error && <p className="text-red-500 text-sm">{error}</p>}
 
             {/* Name */}
-            <div>
+            <div className="text-black">
               <label className="block text-gray-700 font-semibold">
                 Full Name
               </label>
@@ -73,7 +76,7 @@ export default function BookingForm() {
             </div>
 
             {/* Email */}
-            <div>
+            <div className="text-black">
               <label className="block text-gray-700 font-semibold">Email</label>
               <input
                 type="email"
@@ -86,7 +89,7 @@ export default function BookingForm() {
             </div>
 
             {/* Event Date */}
-            <div>
+            <div className="text-black">
               <label className="block text-gray-700 font-semibold">
                 Event Date
               </label>
@@ -100,7 +103,7 @@ export default function BookingForm() {
             </div>
 
             {/* Event Type */}
-            <div>
+            <div className="text-black">
               <label className="block text-gray-700 font-semibold">
                 Event Type
               </label>
@@ -119,7 +122,7 @@ export default function BookingForm() {
             </div>
 
             {/* Message */}
-            <div>
+            <div className="text-black">
               <label className="block text-gray-700 font-semibold">
                 Additional Details
               </label>

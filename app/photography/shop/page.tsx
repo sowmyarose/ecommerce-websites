@@ -27,7 +27,7 @@ export default function Shop() {
           height={800}
           className="object-cover w-full h-[60vh]"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-white text-center">
+        <div className="absolute inset-0 flex items-center justify-center text-white text-center px-4">
           <h1 className="text-4xl md:text-6xl font-semibold">
             Shop Our Photography
           </h1>
@@ -35,7 +35,7 @@ export default function Shop() {
       </section>
 
       {/* Photos List */}
-      <section className="w-full py-12">
+      <section className="w-full py-12 bg-white">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 px-12">
           {photos.map((photo, index) => (
             <motion.div

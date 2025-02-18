@@ -10,7 +10,7 @@ const collections = [
 export default function FeaturedCollections() {
   return (
     <section
-      className={`w-full py-12 px-2 md:px-10 ${lusitana.className} bg-white`}
+      className={`w-full py-12 px-2 md:px-10 ${lusitana.className} bg-gray-100 text-black`}
     >
       <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
         Featured Collections

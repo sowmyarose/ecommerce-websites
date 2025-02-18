@@ -8,10 +8,12 @@ export default function ShippingPage() {
       <Header />
 
       {/* Hero section */}
-      <section className="w-full bg-[url('/clothing/sky.jpg')] bg-no-repeat bg-cover min-h-[400px] flex items-center justify-center mt-20 md:mt-24">
-        <h2 className="text-center text-3xl md:text-7xl text-black font-bold">
-          Shipping & Returns
-        </h2>
+      <section className="w-full mt-20 md:24">
+        <div className="bg-[url('/clothing/sky.jpg')] bg-no-repeat bg-cover flex items-center justify-center p-10 md:p-20 lg:p-28 xl:p-32">
+          <h2 className="text-white text-5xl font-bold text-center z-30">
+            Shipping & Returns
+          </h2>
+        </div>
       </section>
 
       {/* Shipping */}

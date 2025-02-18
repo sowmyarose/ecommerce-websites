@@ -15,9 +15,11 @@ export default function PhotoDetail() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full bg-black min-h-[300px]">
-        <div className="flex items-center justify-center text-white text-center w-full h-full">
-          <h1 className="text-4xl md:text-6xl font-semibold">{photo?.title}</h1>
+      <section className="w-full bg-black">
+        <div className="flex items-center justify-center text-white text-center w-full h-full pt-20">
+          <h1 className="text-4xl md:text-6xl font-semibold py-8">
+            {photo?.title}
+          </h1>
         </div>
       </section>
 

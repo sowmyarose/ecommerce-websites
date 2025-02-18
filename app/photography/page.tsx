@@ -42,7 +42,7 @@ export default function Photography() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-12 text-center bg-white">
+      <section className="py-12 text-center bg-white px-4">
         <h2 className="text-2xl lg:text-3xl font-bold text-black">
           Ready to Elevate Your Space or Capture Special Moments?
         </h2>

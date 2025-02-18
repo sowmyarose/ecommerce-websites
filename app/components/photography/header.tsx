@@ -143,7 +143,7 @@ export default function Header() {
             >
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 text-2xl font-bold"
+                className="absolute top-4 right-4 text-2xl font-bold text-black"
               >
                 ×
               </button>
@@ -153,7 +153,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={item.href}
-                      className={`hover:scale-105 transform transition-all duration-300 lg:text-lg`}
+                      className={`hover:scale-105 transform transition-all duration-300 lg:text-lg text-black`}
                     >
                       {item.title}
                     </Link>

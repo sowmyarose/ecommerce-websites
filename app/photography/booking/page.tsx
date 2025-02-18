@@ -23,11 +23,8 @@ export default function Booking() {
           alt="Photographer at work"
           width={1920}
           height={800}
-          className="object-cover w-full h-[60vh]"
+          className="object-cover w-full h-[30vh]"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-          <h1 className="text-4xl md:text-6xl font-semibold">Booking</h1>
-        </div>
       </section>
 
       {/* Form */}

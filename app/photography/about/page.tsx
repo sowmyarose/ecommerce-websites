@@ -6,9 +6,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <div
-      className={`w-full h-screen flex flex-col ${lusitana.className} bg-white`}
-    >
+    <div className={`w-full h-screen flex flex-col ${lusitana.className}`}>
       {/* Header */}
       <Header />
 
@@ -28,7 +26,7 @@ export default function AboutUs() {
       </section>
 
       {/* How They Started */}
-      <section className="py-16 px-6 max-w-screen-xl mx-auto">
+      <section className="py-12 px-6 max-w-screen-xl mx-auto bg-white text-black">
         <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center">
           Our Journey
         </h2>

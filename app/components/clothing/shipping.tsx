@@ -36,8 +36,8 @@ const faqReturn = [
 
 export default function Shipping() {
   return (
-    <section className="w-full">
-      <div className="max-w-4xl mx-auto p-10">
+    <section className="w-full bg-white">
+      <div className="max-w-4xl mx-auto p-10 text-black">
         {/* Shipping */}
         <div className="mt-6">
           <h2 className="text-3xl font-semibold mb-4">Shipping FAQs</h2>
