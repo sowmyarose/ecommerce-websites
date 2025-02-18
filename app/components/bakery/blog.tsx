@@ -1,6 +1,6 @@
 export default function Blog() {
   return (
-    <section className="w-full py-12 px-2 md:px-4 bg-white">
+    <section className="w-full py-16 px-2 md:px-4 bg-white">
       <div className="rounded-[50px] bg-pink-100 flex flex-col p-8">
         <h2 className="text-2xl md:text-4xl font-semibold text-gray-700 text-center">
           Latest from Our Blog

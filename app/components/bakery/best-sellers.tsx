@@ -9,19 +9,19 @@ const bestSellers = [
 
 export default function BestSellers() {
   return (
-    <section className="w-full py-12 px-4 bg-white">
-      <div className="rounded-[50px] bg-[#5F2966] flex flex-col p-8 min-h-[750px]">
+    <section className="w-full xl:py-4 px-2 md:px-4 bg-white">
+      <div className="rounded-[50px] bg-[#5F2966] flex flex-col">
         <h2
-          className={`text-5xl font-semibold text-gray-700 text-center text-white ${cookie.className}`}
+          className={`text-5xl font-semibold text-gray-700 text-center text-white p-6 ${cookie.className}`}
         >
           Our Bestsellers
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div className="w-full grow grid grid-cols-1 md:grid-cols-3 py-6 px-4 gap-6">
           {bestSellers.map((item) => (
             <div
               key={item.name}
-              className="p-4 flex flex-col items-center justify-center shadow-lg"
+              className="flex flex-col items-center justify-center py-4"
             >
               <Image
                 src={item.image}

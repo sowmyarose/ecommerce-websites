@@ -31,17 +31,17 @@ export default function Team() {
   const [isHovered, setIsHovered] = useState<any>({});
 
   return (
-    <section className="w-full py-12 g-white">
+    <section className="w-full bg-white px-2 py-6">
       <h2 className="text-3xl font-semibold text-[#ad64ed] text-center">
         Meet Our Team
       </h2>
-      <div className="w-full bg-[#e6d1fa] mt-8 flex flex-col py-4 px-4 md:p-8 items-center min-h-[500px]">
-        <p className="text-gray-600 mt-4">
+      <div className="w-full rounded-[50px] bg-[#e6d1fa] mt-8 flex flex-col py-4 px-4 md:p-8 items-center min-h-[500px]">
+        <p className="text-gray-600 mt-4 text-center">
           Our team of expert bakers and pastry chefs work passionately to bring
           you the best flavors and designs. Each cake is made with love and
           creativity.
         </p>
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-6 mt-8">
           {members.map((member, index) => (
             <motion.div
               key={index}

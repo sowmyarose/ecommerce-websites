@@ -8,19 +8,19 @@ const tabs = [
   {
     id: "tab-1",
     icon: "/cupcake.png",
-    label: "Cup Cakes",
+    label: "CupCakes",
     subLabel: "Popular",
   },
   {
     id: "tab-2",
     icon: "/birthday.png",
-    label: "Birthday Cakes",
+    label: "BirthdayCakes",
     subLabel: "Special",
   },
   {
     id: "tab-3",
     icon: "/wedding.png",
-    label: "Wedding Cakes",
+    label: "WeddingCakes",
     subLabel: "Lovely",
   },
 ];
@@ -38,8 +38,8 @@ export default function Menu() {
   const [activeTab, setActiveTab] = useState("tab-1");
 
   return (
-    <section className="w-full py-12">
-      <div className="flex flex-col w-full lg:max-w-[900px] xl:max-w-[1200px] mx-auto mt-10 items-center justify-center">
+    <section className="w-full bg-white px-2 md:px-4 xl:px-12 py-6">
+      <div className="flex flex-col w-full items-center justify-center gap-4">
         <h2
           className={`text-3xl font-semibold ${lusitana.className} text-black`}
         >
@@ -47,18 +47,18 @@ export default function Menu() {
         </h2>
 
         {/* Types */}
-        <ul className="flex flex-col md:flex-row justify-center md:border-b mb-5 mt-5 gap-4">
+        <ul className="flex flex-row justify-center border-b mb-5 mt-5 gap-2 md:gap-4 w-full">
           {tabs.map((tab) => (
             <li key={tab.id} className="nav-item">
               <button
-                className={`flex items-center text-start mx-3 pb-3 ${
+                className={`flex flex-col md:flex-row items-center text-center md:text-start mx-2 md:mx-3 pb-3 ${
                   activeTab === tab.id
                     ? "border-b-2 border-b-[#ad64ed] text-black"
-                    : "text-gray-500"
+                    : "text-gray-600"
                 }`}
                 onClick={() => setActiveTab(tab.id)}
               >
-                <div className="w-16 h-16 relative flex">
+                <div className="w-8 h-8 md:w-16 md:h-16 relative flex">
                   <Image
                     src={tab.icon}
                     alt={tab.label}
@@ -66,9 +66,13 @@ export default function Menu() {
                     objectFit="contain"
                   />
                 </div>
-                <div className="pl-3">
-                  <small className="text-gray-500">{tab.subLabel}</small>
-                  <h6 className="mt-0 mb-0 font-semibold">{tab.label}</h6>
+                <div className="md:pl-3">
+                  <small className="text-gray-500 text-xs">
+                    {tab.subLabel}
+                  </small>
+                  <h6 className="mt-0 mb-0 font-semibold text-sm whitespace-nowrap">
+                    {tab.label}
+                  </h6>
                 </div>
               </button>
             </li>
@@ -76,14 +80,14 @@ export default function Menu() {
         </ul>
 
         {/* List */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 px-2 bg-white">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 py-8 px-2 xl:max-w-screen-xl xl:mx-auto xl:px-8 rounded-[50px] bg-[#f3ddf3]">
           {cakes.map((cake, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-white overflow-hidden p-4 flex text-black"
+              className="bg-white overflow-hidden p-4 flex text-black rounded-md"
             >
               <Image
                 className="flex-shrink-0 rounded"
@@ -94,8 +98,8 @@ export default function Menu() {
               />
               <div className="w-full flex flex-col text-start pl-4">
                 <h5 className="flex justify-between border-b pb-2 text-lg font-semibold">
-                  <span>{cake.name}</span>
-                  <span className="text-primary">{cake.price}</span>
+                  <span className="text-black">{cake.name}</span>
+                  <span className="text-gray-500">{cake.price}</span>
                 </h5>
                 <small className="italic text-gray-600">
                   Ipsum ipsum clita erat amet dolor justo diam

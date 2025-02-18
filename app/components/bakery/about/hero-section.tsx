@@ -5,16 +5,16 @@ import { cookie } from "@/app/fonts/fonts";
 
 export default function HeroSection() {
   return (
-    <section className="w-full mt-24 xl:mt-12 bg-white">
-      <div className="bg-[#ad64ed] min-h-44 md:min-h-72 lg:min-h-[300px] flex items-center justify-center">
+    <section className="w-full mt-20 py-8 md:mt-24 px-2 md:px-4 bg-white">
+      <div className="bg-[#ad64ed] flex items-center justify-center rounded-[50px] py-12">
         <h1
           className={`text-5xl md:text-7xl lg:text-9xl font-bold text-white ${cookie.className}`}
         >
           About Us
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row w-full lg:max-w-[900px] xl:max-w-[1200px] mx-auto mt-10">
-        <div className="w-full lg:w-1/2">
+      <div className="flex flex-col lg:flex-row w-full lg:max-w-[900px] xl:max-w-[1200px] mx-auto">
+        <div className="w-full lg:w-1/2 py-10 lg:py-12 bg-white">
           <div className="w-full grid grid-cols-2 gap-3 xl:max-w-lg mx-auto px-2 lg:px-0">
             <motion.div
               className="text-start"
@@ -77,8 +77,9 @@ export default function HeroSection() {
             </motion.div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 bg-white">
-          <div className="max-w-4xl mx-auto xl:py-12 px-6">
+
+        <div className="w-full lg:w-1/2 bg-white py-6 lg:py-12">
+          <div className="w-full xl:max-w-4xl mx-auto xl:py-12 px-6">
             <h5 className="text-start text-[#ad64ed] font-semibold text-lg">
               About Us
             </h5>
@@ -98,7 +99,7 @@ export default function HeroSection() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-6">
               <motion.div
                 className="flex items-center border-l-4 border-[#ad64ed] px-4"
                 initial={{ opacity: 0, x: -50 }}

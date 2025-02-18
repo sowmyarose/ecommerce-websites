@@ -20,7 +20,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="w-full lg:w-1/2 bg-[#eebe1b] shadow-lg rounded-lg p-6"
+      className="w-full md:max-w-[600px] lg:max-w-3xl mx-auto bg-[#eebe1b] shadow-lg rounded-lg p-6"
       onSubmit={handleSubmit}
     >
       <div className="mb-4">
@@ -74,30 +74,32 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full mt-24 xl:mt-16 bg-[#ad64ed] min-h-44 md:min-h-72 lg:min-h-[300px] flex items-center justify-center">
-        <h1
-          className={`text-5xl md:text-7xl lg:text-9xl font-bold text-white ${cookie.className}`}
-        >
-          Contact Us
-        </h1>
+      <section className="w-full mt-20 py-8 md:mt-24 px-2 md:px-4 bg-white">
+        <div className="bg-[#ad64ed] flex items-center justify-center rounded-[50px] py-12">
+          <h1
+            className={`text-5xl md:text-7xl lg:text-9xl font-bold text-white ${cookie.className}`}
+          >
+            Contact Us
+          </h1>
+        </div>
       </section>
 
       {/* Form */}
-      <div className="max-w-screen-xl mx-auto p-6 flex flex-col lg:flex-row gap-10 items-start mt-10 text-black bg-white">
-        <div className="w-full lg:w-1/2">
-          <h2 className="text-xl lg:text-xl xl:text-3xl font-bold text-center mb-6">
+      <section className="w-full bg-white py-4">
+        <div className="w-full flex flex-col px-4 gap-4 md:gap-8">
+          <h2 className="text-xl lg:text-xl xl:text-3xl font-bold text-center text-black">
             Order Your Cake Online
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 text-center">
             Order custom cakes online with ease! Choose your favorite flavors,
             designs, and pickup or delivery options. Fill out the form below,
             and we&apos;ll get back to you with confirmation.
           </p>
-        </div>
 
-        {/* Form */}
-        <ContactForm />
-      </div>
+          {/* Form */}
+          <ContactForm />
+        </div>
+      </section>
     </div>
   );
 }

@@ -25,12 +25,12 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="w-full py-12 px-4 bg-white">
-      <div className="bg-white flex flex-col p-8">
-        <h2 className="text-3xl font-bold text-[#b574ef] text-center">
+    <section className="w-full xl:py-12 px-4 bg-white">
+      <div className="bg-white flex flex-col">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#b574ef] text-center">
           What Our Customers Say
         </h2>
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -52,7 +52,9 @@ export default function Testimonials() {
               <h3 className="text-lg font-semibold text-gray-700 mt-4">
                 {testimonial.name}
               </h3>
-              <p className="text-gray-600 mt-2">{testimonial.review}</p>
+              <p className="text-gray-600 mt-2 text-center">
+                {testimonial.review}
+              </p>
             </motion.div>
           ))}
         </div>
