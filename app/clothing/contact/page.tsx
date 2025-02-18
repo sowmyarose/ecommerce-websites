@@ -4,34 +4,25 @@ import ContactSection from "@/app/components/clothing/contact-section";
 
 export default function Contact() {
   return (
-    <div className="w-full h-screen flex flex-col bg-white">
+    <div className="w-full h-screen flex flex-col">
       {/* Header */}
       <Header />
 
       {/* Hero */}
-      <section className="w-full relative min-h-[250px] lg:min-h-[400px] xl:min-h-[500px]">
-        <Image
-          src="/clothing/contact.jpg"
-          alt="hero"
-          width={1920}
-          height={500}
-          className="w-full h-full object-cover"
-        />
-
-        {/* Overlay for blur effect and text */}
-        <div className="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm">
-          <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
+      <section className="w-full mt-20 md:24">
+        <div className="bg-[url('/clothing/contact.jpg')] bg-no-repeat bg-cover flex items-center justify-center p-10 md:p-20 lg:p-28 xl:p-32">
+          <h2 className="text-white text-5xl font-bold text-center z-30">
             Contact Us
           </h2>
         </div>
       </section>
 
       {/* Form */}
-      <section className="w-full py-12">
-        <div className="max-w-4xl mx-auto">
+      <section className="w-full py-12 bg-gray-100">
+        <div className="max-w-4xl mx-auto text-black">
           <h4 className="text-xl text-center">Get in Touch</h4>
 
-          <form className="max-w-xl mx-auto mt-10 w-full flex flex-col gap-8 shadow-lg p-8">
+          <form className="max-w-xl mx-auto mt-10 w-full flex flex-col gap-8 shadow-lg p-8 bg-white text-black">
             <input placeholder="Name" className="border-b border-b-black p-3" />
             <input
               placeholder="Email"
@@ -56,7 +47,7 @@ export default function Contact() {
       </section>
 
       {/* Location */}
-      <section className="w-full py-12 bg-gray-100">
+      <section className="w-full py-12 bg-white">
         <div className="flex flex-col lg:flex-row w-full px-6 sm:px-8 xl:max-w-screen-xl mx-auto gap-8">
           <div className="flex justify-center lg:w-1/2">
             <Image
@@ -68,7 +59,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className="flex flex-col w-full lg:w-1/2 mt-8 lg:mt-0 text-black md:px-6 sm:px-8">
+          <div className="flex flex-col w-full lg:w-1/2 mt-8 lg:mt-0 text-black md:px-6 sm:px-8 text-black">
             <h2 className="text-2xl lg:text-4xl font-bold">
               The Looms Fashions
             </h2>

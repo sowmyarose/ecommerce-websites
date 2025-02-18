@@ -29,7 +29,7 @@ const QuantitySelector = () => {
 
       {/* Quantity Display */}
       <motion.span
-        className="text-2xl font-semibold w-10 text-center"
+        className="text-2xl font-semibold w-10 text-center text-black"
         animate={{ scale: [1, 1.2, 1] }}
         transition={{ duration: 0.3 }}
       >
@@ -73,14 +73,16 @@ export default function CartDrawer({
           {/* Close Button */}
           <button
             onClick={() => setOpenCart(false)}
-            className="absolute top-4 right-4 text-gray-600 hover:text-black font-bold"
+            className="absolute top-4 right-4 text-black font-bold"
           >
             x
           </button>
 
           {/* Drawer Content */}
           <div className="bg-gray-100 p-6">
-            <h2 className="text-xl font-semibold mb-4">Cart Summary</h2>
+            <h2 className="text-xl font-semibold mb-4 text-black">
+              Cart Summary
+            </h2>
           </div>
 
           {/* Scrollable Items Section */}
@@ -133,7 +135,7 @@ export default function CartDrawer({
 
           {/* Fixed Bottom Total Section */}
           <div className="border-t border-gray-200 p-6 bg-white mt-auto">
-            <div className="flex justify-between text-lg font-semibold">
+            <div className="flex justify-between text-lg font-semibold text-black">
               <span>Total:</span>
               <span>{product.price}</span>
             </div>

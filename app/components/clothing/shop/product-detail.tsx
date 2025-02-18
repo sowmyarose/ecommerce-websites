@@ -47,7 +47,7 @@ export default function ProductDetail({ product }: any) {
   const [openCheckout, setOpenCheckout] = useState(false);
 
   return (
-    <div className="w-full xl:max-w-screen-lg mx-auto px-4 flex flex-col md:py-8 xl:py-12">
+    <div className="w-full xl:max-w-screen-lg mx-auto px-4 flex flex-col">
       <div className="w-full flex flex-col md:flex-row gap-8 xl:gap-16">
         {/* Image */}
         <div className="w-full md:w-1/2 relative">

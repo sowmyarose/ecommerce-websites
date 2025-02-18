@@ -15,11 +15,11 @@ export default function Type() {
   const dresses = products.filter((item) => item.type === type);
 
   return (
-    <div className="w-full h-screen flex flex-col bg-white">
+    <div className="w-full h-screen flex flex-col">
       {/* Header */}
       <Header />
 
-      <div className="w-full mt-6 xl:mt-20 py-8">
+      <div className="w-full mt-6 xl:mt-20 py-8 bg-white">
         <h2 className="mt-24 text-center text-black font-bold text-4xl">
           {type?.toString().toUpperCase()}
         </h2>

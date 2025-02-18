@@ -30,7 +30,7 @@ export default function Shop() {
     : products.slice(0, productsPerRow * 2);
 
   return (
-    <div className="w-full h-screen flex flex-col bg-white">
+    <div className="w-full h-screen flex flex-col">
       {/* Header */}
       <Header />
 
@@ -40,15 +40,16 @@ export default function Shop() {
       </div>
 
       {/* Hero-section */}
-      <section className="w-full relative min-h-[250px] lg:min-h-[300px] xl:min-h-[400px] flex">
-        <Image src="/clothing/shop1.png" alt="hero" fill objectFit="cover" />
-        <div className="w-full h-full flex items-center justify-center">
-          <h2 className="text-black text-5xl font-bold z-30">Shop</h2>
+      <section className="w-full">
+        <div className="bg-[url('/clothing/shop1.png')] bg-no-repeat bg-cover flex items-center justify-center p-10 md:p-20 lg:p-28 xl:p-32">
+          <h2 className="text-white text-5xl font-bold text-center z-30">
+            Shop
+          </h2>
         </div>
       </section>
 
       {/* Types */}
-      <section className="w-full py-12">
+      <section className="w-full py-12 bg-white">
         <div className="w-full md:max-w-2xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-3">
           {types.map((type, index) => (
             <Link
@@ -74,7 +75,7 @@ export default function Shop() {
 
       {/* Products */}
       <section className="w-full py-12 bg-white">
-        <div className="max-w-4xl mx-auto flex flex-col">
+        <div className="max-w-4xl mx-auto flex flex-col text-black">
           <h2 className="text-2xl text-center font-bold">Our Products</h2>
 
           <ProductsList products={visibleProducts} type="all" />

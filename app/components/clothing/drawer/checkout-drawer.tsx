@@ -68,7 +68,7 @@ export default function CheckoutDrawer({
       className="fixed top-0 right-0 w-full h-full bg-white shadow-lg z-50 flex flex-col text-black"
     >
       <div className="bg-gray-100 p-6">
-        <h2 className="text-xl font-semibold mb-4">Checkout</h2>
+        <h2 className="text-xl font-semibold mb-4 text-black">Checkout</h2>
       </div>
 
       <div className="flex flex-col py-12 px-6 lg:px-16 xl:px-24 grow overflow-y-auto gap-4">
@@ -81,12 +81,14 @@ export default function CheckoutDrawer({
           <div className="flex flex-col md:flex-row-reverse gap-8">
             {/* Summary */}
             <div className="w-full md:w-1/2 min-h-[500px] flex flex-col shadow-md rounded-md bg-white p-7 md:p-10">
-              <h4 className="text-lg font-semibold">Order Summary</h4>
+              <h4 className="text-lg font-semibold text-black">
+                Order Summary
+              </h4>
 
               <Summary />
 
               <div className="border-t border-gray-200 p-6 bg-white mt-auto">
-                <div className="flex justify-between text-lg font-semibold">
+                <div className="flex justify-between text-lg font-semibold text-black">
                   <span>Total:</span>
                   <span>Rs. 2000</span>
                 </div>

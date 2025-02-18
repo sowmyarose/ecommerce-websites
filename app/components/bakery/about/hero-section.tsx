@@ -109,7 +109,7 @@ export default function HeroSection() {
                 <h1 className="text-3xl md:text-5xl lg:text-2xl xl:text-5xl text-[#ad64ed] font-bold mb-0">
                   15
                 </h1>
-                <div className="pl-4">
+                <div className="pl-4 text-gray-600">
                   <p className="mb-0 text-gray-600">Years of</p>
                   <h6 className="md:text-lg lg:text-sm xl:text-lg font-semibold uppercase">
                     Experience
@@ -126,7 +126,7 @@ export default function HeroSection() {
                 <h1 className="text-3xl md:text-5xl lg:text-2xl xl:text-5xl text-[#ad64ed] font-bold mb-0">
                   50
                 </h1>
-                <div className="pl-4">
+                <div className="pl-4 text-gray-600">
                   <p className="mb-0 text-gray-600">Popular</p>
                   <h6 className="md:text-lg lg:text-sm xl:text-lg font-semibold uppercase">
                     Master Chefs

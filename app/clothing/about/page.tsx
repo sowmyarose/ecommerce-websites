@@ -8,14 +8,8 @@ export default function About() {
       <Header />
 
       {/* Hero */}
-      <section className="w-full relative min-h-[250px] lg:min-h-[300px] xl:min-h-[400px] flex">
-        <Image
-          src="/clothing/about-hero.png"
-          alt="hero"
-          fill
-          objectFit="cover"
-        />
-        <div className="w-full h-full flex items-center justify-center">
+      <section className="w-full mt-20 md:24">
+        <div className="bg-[url('/clothing/about-hero.png')] bg-no-repeat bg-cover flex items-center justify-center p-10 md:p-20 lg:p-28 xl:p-32">
           <h2 className="text-white text-5xl font-bold text-center z-30">
             About Us
           </h2>

@@ -47,7 +47,7 @@ export default function Clothing() {
       <HeroSection />
 
       {/* About */}
-      <section className="py-12 bg-gray-100">
+      <section className="w-full py-6 md:py-12 bg-gray-100">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-5">
           About Us
         </h2>

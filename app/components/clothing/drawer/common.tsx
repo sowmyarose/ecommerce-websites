@@ -14,7 +14,7 @@ const billingFields = [
 const BackButton = ({ goBack }: any) => {
   return (
     <div
-      className="flex flex-row gap-2 text-neutral-400 cursor-pointer"
+      className="flex flex-row gap-2 text-neutral-600 cursor-pointer"
       onClick={goBack}
     >
       <Image
@@ -68,12 +68,12 @@ const OrderComplete = ({ billingState }: any) => {
         </h3>
 
         <div className="border-b border-b-gray-200 p-6">
-          <h4 className="font-semibold">Order Summary</h4>
+          <h4 className="font-semibold text-black">Order Summary</h4>
           <Summary />
         </div>
 
         {/* Billing */}
-        <div className="border-b border-b-gray-200 p-6">
+        <div className="border-b border-b-gray-200 p-6 text-black">
           <h4 className="font-semibold">Billing</h4>
 
           <div className="flex flex-col md:flex-row justify-between mt-4">
@@ -94,7 +94,7 @@ const OrderComplete = ({ billingState }: any) => {
         </div>
 
         {/* Payment */}
-        <div className="border-b border-b-gray-200 p-6">
+        <div className="border-b border-b-gray-200 p-6 text-black">
           <h4 className="font-semibold">Payment</h4>
 
           <div className="bg-sky-100 p-3 mt-4 text-center text-zinc-400">
@@ -104,7 +104,7 @@ const OrderComplete = ({ billingState }: any) => {
 
         {/* Total */}
         <div className="mt-6 p-6">
-          <div className="flex justify-between text-lg font-semibold">
+          <div className="flex justify-between text-lg font-semibold text-black">
             <span>Total:</span>
             <span>Rs. 2000</span>
           </div>
@@ -116,7 +116,7 @@ const OrderComplete = ({ billingState }: any) => {
 
 const BilledDetail = ({ billingState }: any) => {
   return (
-    <div className="shadow-md rounded-md bg-white py-4">
+    <div className="shadow-md rounded-md bg-white py-4 text-black">
       <div className="text-lg border-b border-b-gray-200 p-2 flex flex-row items-center gap-4 p-4">
         <Image
           src="/clothing/circle-check-green.svg"
@@ -162,7 +162,7 @@ const BillingForm = ({
   handleSubmit,
 }: any) => {
   return (
-    <div className="flex flex-col shadow-md rounded-md bg-white p-10">
+    <div className="flex flex-col shadow-md rounded-md bg-white p-10 text-black">
       <h4>Billing Address</h4>
 
       {billingFields.map((field, index) => (
@@ -200,7 +200,7 @@ const PaymentSection = ({ enablePayment, loading, handlePayment }: any) => {
   return (
     <>
       {enablePayment ? (
-        <div className="flex flex-col shadow-md rounded-md bg-white p-10">
+        <div className="flex flex-col shadow-md rounded-md bg-white p-10 text-black">
           <h4>Payment</h4>
           <button
             className={`mt-4 text-white ${

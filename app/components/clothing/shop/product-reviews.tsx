@@ -31,12 +31,12 @@ const reviews = [
 
 export default function ProductReviews() {
   return (
-    <div className="mt-12 flex flex-col bg-white">
+    <div className="mt-12 flex flex-col bg-white text-black">
       <h2 className="text-black text-4xl">Customer reviews</h2>
 
       {reviews.map((review) => (
         <div key={review.id} className="border-b py-4">
-          <h3 className="font-semibold text-lg">{review.name}</h3>
+          <h3 className="font-semibold text-lg text-black">{review.name}</h3>
           <div className="flex items-center mb-2">
             {Array.from({ length: 5 }).map((_, i) => (
               <Image
